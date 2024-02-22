@@ -62,16 +62,19 @@ od.download(download_url)
 
 ```
 
-## [Kaggle Credentials](https://www.kaggle.com/settings/account)
+## Kaggle Credentials
 
-opendatasets uses the Kaggle Official API for donwloading dataset from Kaggle. Follow these steps to find your API credentials:
+opendatasets uses the [Kaggle Official API](https://www.kaggle.com/settings/account) for donwloading dataset from Kaggle. Follow these steps to find your API credentials:
 
-Go to https://kaggle.com/me/account (sign in if required).
+  1. Go to https://kaggle.com/me/account (sign in if required).
 
-Scroll down to the "API" section and click "Create New API Token". This will download a file kaggle.json with the following contents:
+  2. Scroll down to the "API" section and click "Create New API Token".  This will download a file kaggle.json with the following contents:
 
+```json
 {"username":"YOUR_KAGGLE_USERNAME","key":"YOUR_KAGGLE_KEY"}
-When you run opendatsets.download, you will be asked to enter your username & Kaggle API, which you can get from the file downloaded in step 2.
-Note that you need to download the kaggle.json file only once. You can also place the kaggle.json file in the same directory as the Jupyter notebook, and the credentials will be read automatically.
+```
+  3. When you run opendatsets.download, you will be asked to enter your username & Kaggle API, which you can get from the file downloaded in step 2.
+     
+Note that you need to download the `kaggle.json` file only once. You can also place the `kaggle.json` file in the same directory as the Jupyter notebook, and the credentials will be read automatically.
 
-IMPORTANT NOTE: If you're downloading a competition dataset, make sure to first accept the rules of the competition.
+**IMPORTANT NOTE**: If you're downloading a competition dataset, make sure to first accept the rules of the competition.

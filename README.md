@@ -43,18 +43,22 @@ Python
 
 # How to Download Data set using `opendatasets`
 
+opendatasets is a Python library for downloading datasets from online sources like Kaggle and Google Drive using a simple Python command.
+
+Installation
+Install the library using pip:
 
 ``` python
 pip install opendatasets --upgrade --quiet
-
+```
 Note: you may need to restart the kernel to use updated packages.
 
+Usage - Downloading a dataset
+Datasets can be downloaded within a Jupyter notebook or Python script using the opendatasets.download helper function. The US Accidents (2016 - 2023) iss used in this EDA:
+```python
 import opendatasets as od
-```
-
-download_url = 'https:.....(link here)'
-
+download_url = 'https://www.kaggle.com/datasets/sobhanmoosavi/us-accidents'
 od.download(download_url)
 
-
+```
 

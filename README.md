@@ -62,7 +62,7 @@ od.download(download_url)
 
 ```
 
-## Kaggle Credentials(https://www.kaggle.com/settings/account)
+## [Kaggle Credentials](https://www.kaggle.com/settings/account)
 
 opendatasets uses the Kaggle Official API for donwloading dataset from Kaggle. Follow these steps to find your API credentials:
 
